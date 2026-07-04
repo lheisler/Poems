@@ -14,8 +14,29 @@ td {
   line-height: 1.5;          /* Space between lines of text */
 }
 
-
 div.description {
+  position: relative;
+  background-color: #e9ecef;
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: inline-block; /* Bubble shrinks snugly to fit the text size */
+  max-width: 250px;
+  font-family: sans-serif;
+}
+
+/* Creates the little tail at the bottom using a pseudo-element */
+.description::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Positions tail right underneath the bubble */
+  left: 30px; /* Horizontal placement of the tail */
+  border-width: 10px 10px 0; /* Creates a clean CSS triangle */
+  border-style: solid;
+  border-color: #e9ecef transparent;
+}
+
+div.descriptionx {
   font-family: Georgia, sans-serif;
   font-size: 18px;
   font-weight: normal;
