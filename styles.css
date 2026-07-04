@@ -1,0 +1,23 @@
+td {
+  /* Text Formatting */
+  font-family: Georgia, sans-serif;
+  font-size: 14px;
+  font-weight: normal;       /* Options: bold, normal, 600 */
+  color: #333333;            /* Text color */
+  
+  /* Alignment */
+  text-align: center;          /* Options: left, center, right, justify */
+  vertical-align: middle;    /* Options: top, middle, bottom */
+  
+  /* Spacing */
+  padding: 10px;             /* Space around the text inside the cell */
+  line-height: 1.5;          /* Space between lines of text */
+}
+
+
+div.description {
+  font-family: Georgia, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left; 
+}
